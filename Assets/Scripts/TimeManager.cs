@@ -55,7 +55,7 @@ namespace GameTime
 
         private IEnumerator NextTime()
         {
-            while (_timerIsOn && _timer >= 0f)
+            while (_timerIsOn && _timer > 0f)
             {
                 yield return new WaitForSeconds(1f);
                 _gameIsPaused = Time.timeScale == 0;

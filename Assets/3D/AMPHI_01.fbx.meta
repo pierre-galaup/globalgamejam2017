@@ -1,0 +1,208 @@
+fileFormatVersion: 2
+guid: ef49f1b964934b44fa36696d8e398762
+timeCreated: 1484953567
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: bureau
+    100004: escalier_D_0
+    100006: escalier_D_1
+    100008: escalier_D_2
+    100010: escalier_G_0
+    100012: escalier_G_1
+    100014: escalier_G_2
+    100016: escaliers
+    100018: mur_arriere
+    100020: mur_D
+    100022: mur_devant
+    100024: mur_G
+    100026: parois
+    100028: plafond
+    100030: sol
+    100032: table_rangee_D_0
+    100034: table_rangee_D_1
+    100036: table_rangee_D_2
+    100038: table_rangee_D_3
+    100040: table_rangee_G_0
+    100042: table_rangee_G_1
+    100044: table_rangee_G_2
+    100046: table_rangee_G_3
+    100048: table_rangee_M_0
+    100050: table_rangee_M_1
+    100052: table_rangee_M_2
+    100054: table_rangee_M_3
+    100056: tables
+    400000: //RootNode
+    400002: bureau
+    400004: escalier_D_0
+    400006: escalier_D_1
+    400008: escalier_D_2
+    400010: escalier_G_0
+    400012: escalier_G_1
+    400014: escalier_G_2
+    400016: escaliers
+    400018: mur_arriere
+    400020: mur_D
+    400022: mur_devant
+    400024: mur_G
+    400026: parois
+    400028: plafond
+    400030: sol
+    400032: table_rangee_D_0
+    400034: table_rangee_D_1
+    400036: table_rangee_D_2
+    400038: table_rangee_D_3
+    400040: table_rangee_G_0
+    400042: table_rangee_G_1
+    400044: table_rangee_G_2
+    400046: table_rangee_G_3
+    400048: table_rangee_M_0
+    400050: table_rangee_M_1
+    400052: table_rangee_M_2
+    400054: table_rangee_M_3
+    400056: tables
+    2300000: bureau
+    2300002: escalier_D_0
+    2300004: escalier_D_1
+    2300006: escalier_D_2
+    2300008: escalier_G_0
+    2300010: escalier_G_1
+    2300012: escalier_G_2
+    2300014: mur_arriere
+    2300016: mur_D
+    2300018: mur_devant
+    2300020: mur_G
+    2300022: plafond
+    2300024: sol
+    2300026: table_rangee_D_0
+    2300028: table_rangee_D_1
+    2300030: table_rangee_D_2
+    2300032: table_rangee_D_3
+    2300034: table_rangee_G_0
+    2300036: table_rangee_G_1
+    2300038: table_rangee_G_2
+    2300040: table_rangee_G_3
+    2300042: table_rangee_M_0
+    2300044: table_rangee_M_1
+    2300046: table_rangee_M_2
+    2300048: table_rangee_M_3
+    3300000: bureau
+    3300002: escalier_D_0
+    3300004: escalier_D_1
+    3300006: escalier_D_2
+    3300008: escalier_G_0
+    3300010: escalier_G_1
+    3300012: escalier_G_2
+    3300014: mur_arriere
+    3300016: mur_D
+    3300018: mur_devant
+    3300020: mur_G
+    3300022: plafond
+    3300024: sol
+    3300026: table_rangee_D_0
+    3300028: table_rangee_D_1
+    3300030: table_rangee_D_2
+    3300032: table_rangee_D_3
+    3300034: table_rangee_G_0
+    3300036: table_rangee_G_1
+    3300038: table_rangee_G_2
+    3300040: table_rangee_G_3
+    3300042: table_rangee_M_0
+    3300044: table_rangee_M_1
+    3300046: table_rangee_M_2
+    3300048: table_rangee_M_3
+    4300000: table_rangee_M_0
+    4300002: table_rangee_M_1
+    4300004: table_rangee_M_2
+    4300006: table_rangee_M_3
+    4300008: table_rangee_D_0
+    4300010: table_rangee_D_1
+    4300012: table_rangee_D_2
+    4300014: table_rangee_D_3
+    4300016: table_rangee_G_3
+    4300018: table_rangee_G_2
+    4300020: table_rangee_G_1
+    4300022: table_rangee_G_0
+    4300024: bureau
+    4300026: escalier_D_2
+    4300028: escalier_D_1
+    4300030: escalier_D_0
+    4300032: escalier_G_2
+    4300034: escalier_G_1
+    4300036: escalier_G_0
+    4300038: plafond
+    4300040: mur_devant
+    4300042: mur_G
+    4300044: mur_D
+    4300046: mur_arriere
+    4300048: sol
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
