@@ -28,7 +28,7 @@ public class RoamingAi : MonoBehaviour
     public float WanderRadius = 3f;
     public Transform Target;
     public ERoamingType RoamingType;
-    public float MaxMovingTime = 10f;
+    public float MaxMovingTime = 3f;
     
     // 0.75 is 75% of probability to roam
     public float RoamingProbability = 0.75f;
