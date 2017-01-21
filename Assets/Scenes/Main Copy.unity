@@ -1788,11 +1788,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1439866832}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1458298592 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4175835726185468, guid: 9b20131a22b983d4cb114fe8ad4f8d99,
-    type: 2}
-  m_PrefabInternal: {fileID: 1477176583}
 --- !u!1001 &1477176583
 Prefab:
   m_ObjectHideFlags: 0
@@ -1834,40 +1829,20 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4879460011049054, guid: 9b20131a22b983d4cb114fe8ad4f8d99, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0.5326752
+      value: 0.53267515
       objectReference: {fileID: 0}
     - target: {fileID: 4879460011049054, guid: 9b20131a22b983d4cb114fe8ad4f8d99, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.070340455
+      value: 0.07034045
       objectReference: {fileID: 0}
     - target: {fileID: 4879460011049054, guid: 9b20131a22b983d4cb114fe8ad4f8d99, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0.83613276
+      value: 0.83613265
       objectReference: {fileID: 0}
     - target: {fileID: 4879460011049054, guid: 9b20131a22b983d4cb114fe8ad4f8d99, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -0.110415146
+      value: -0.11041513
       objectReference: {fileID: 0}
-    - target: {fileID: 114399652858308176, guid: 9b20131a22b983d4cb114fe8ad4f8d99,
-        type: 2}
-      propertyPath: WanderTime
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114399652858308176, guid: 9b20131a22b983d4cb114fe8ad4f8d99,
-        type: 2}
-      propertyPath: WanderRadius
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 195509108300120606, guid: 9b20131a22b983d4cb114fe8ad4f8d99,
-        type: 2}
-      propertyPath: m_AutoRepath
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114399652858308176, guid: 9b20131a22b983d4cb114fe8ad4f8d99,
-        type: 2}
-      propertyPath: Target
-      value: 
-      objectReference: {fileID: 1458298592}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9b20131a22b983d4cb114fe8ad4f8d99, type: 2}
   m_IsPrefabParent: 0
