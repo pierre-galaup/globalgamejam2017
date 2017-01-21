@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: aec13fdb89fff4c4abe437177196059c
+timeCreated: 1485001727
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: bureau
+    100004: mur_arriere
+    100006: mur_D
+    100008: mur_devant
+    100010: mur_G
+    100012: parois
+    100014: plafond
+    100016: sol
+    100018: table_rangee_D_0
+    100020: table_rangee_D_1
+    100022: table_rangee_D_2
+    100024: table_rangee_D_3
+    100026: table_rangee_G_0
+    100028: table_rangee_G_1
+    100030: table_rangee_G_2
+    100032: table_rangee_G_3
+    100034: table_rangee_M_0
+    100036: table_rangee_M_1
+    100038: table_rangee_M_2
+    100040: table_rangee_M_3
+    100042: tables
+    400000: //RootNode
+    400002: bureau
+    400004: mur_arriere
+    400006: mur_D
+    400008: mur_devant
+    400010: mur_G
+    400012: parois
+    400014: plafond
+    400016: sol
+    400018: table_rangee_D_0
+    400020: table_rangee_D_1
+    400022: table_rangee_D_2
+    400024: table_rangee_D_3
+    400026: table_rangee_G_0
+    400028: table_rangee_G_1
+    400030: table_rangee_G_2
+    400032: table_rangee_G_3
+    400034: table_rangee_M_0
+    400036: table_rangee_M_1
+    400038: table_rangee_M_2
+    400040: table_rangee_M_3
+    400042: tables
+    2300000: bureau
+    2300002: mur_arriere
+    2300004: mur_D
+    2300006: mur_devant
+    2300008: mur_G
+    2300010: plafond
+    2300012: sol
+    2300014: table_rangee_D_0
+    2300016: table_rangee_D_1
+    2300018: table_rangee_D_2
+    2300020: table_rangee_D_3
+    2300022: table_rangee_G_0
+    2300024: table_rangee_G_1
+    2300026: table_rangee_G_2
+    2300028: table_rangee_G_3
+    2300030: table_rangee_M_0
+    2300032: table_rangee_M_1
+    2300034: table_rangee_M_2
+    2300036: table_rangee_M_3
+    3300000: bureau
+    3300002: mur_arriere
+    3300004: mur_D
+    3300006: mur_devant
+    3300008: mur_G
+    3300010: plafond
+    3300012: sol
+    3300014: table_rangee_D_0
+    3300016: table_rangee_D_1
+    3300018: table_rangee_D_2
+    3300020: table_rangee_D_3
+    3300022: table_rangee_G_0
+    3300024: table_rangee_G_1
+    3300026: table_rangee_G_2
+    3300028: table_rangee_G_3
+    3300030: table_rangee_M_0
+    3300032: table_rangee_M_1
+    3300034: table_rangee_M_2
+    3300036: table_rangee_M_3
+    4300000: table_rangee_M_0
+    4300002: table_rangee_M_1
+    4300004: table_rangee_M_2
+    4300006: table_rangee_M_3
+    4300008: table_rangee_D_0
+    4300010: table_rangee_D_1
+    4300012: table_rangee_D_2
+    4300014: table_rangee_D_3
+    4300016: table_rangee_G_3
+    4300018: table_rangee_G_2
+    4300020: table_rangee_G_1
+    4300022: table_rangee_G_0
+    4300024: bureau
+    4300026: plafond
+    4300028: mur_devant
+    4300030: mur_G
+    4300032: mur_D
+    4300034: mur_arriere
+    4300036: sol
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
