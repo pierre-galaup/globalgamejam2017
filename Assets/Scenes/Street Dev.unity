@@ -2036,7 +2036,7 @@ MonoBehaviour:
   - {fileID: 1105889325}
   - {fileID: 91841513}
   - {fileID: 1813205457}
-  NumberOfPropsToDisplay: 5
+  NumberOfPropsToDisplay: 9
 --- !u!1 &1746671532
 GameObject:
   m_ObjectHideFlags: 0

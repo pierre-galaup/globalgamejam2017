@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class StreetPropsManager : MonoBehaviour
@@ -23,15 +24,9 @@ public class StreetPropsManager : MonoBehaviour
 	
     private StreetPropSpot[] PickMeStreetSpots(int numberToPick)
     {
-        var pickedIdx = new List<int>();
-
-        while (pickedIdx.Count < numberToPick)
-        {
-            var idx  = Random.Range(0, this.AvailableSpots.Count - 1);
-            if (!pickedIdx.Contains(idx))
-                pickedIdx.Add(idx);
-        }
-
+        var random = new System.Random();
+        var pickedIdx = Enumerable.Range(0, this.AvailableSpots.Count).OrderBy(x => random.Next()).Take(numberToPick).ToList();
+        
         var spotsList = new List<StreetPropSpot>();
 
         foreach (var idx in pickedIdx)
