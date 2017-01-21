@@ -40,12 +40,16 @@ public class PlayerRadicalization : MonoBehaviour
             if (Input.GetButtonDown("Radicalize"))
             {
                 _isRadicalize = true;
+                foreach (GameObject npc in _npcsOnTrigger)
+                {
+                    npc.GetComponent<RoamingAi>().StartListening();
+                }
             }
 
             if (Input.GetButtonUp("Radicalize"))
             {
                 Debug.Log("TIME SINCE BEGIN : " + _timeSinceBeginRadicalize);
-                if (_timeSinceBeginRadicalize <= TimeNeededForRadicalize)
+                if (_timeSinceBeginRadicalize >= TimeNeededForRadicalize)
                 {
                     foreach (GameObject npc in _npcsOnTrigger)
                     {
@@ -55,11 +59,20 @@ public class PlayerRadicalization : MonoBehaviour
                 }
                 else
                 {
+                    foreach (GameObject npc in _npcsOnTrigger)
+                    {
+                        npc.GetComponent<RoamingAi>().StopListening();
+                    }
                     // TODO : Radicalize NOT OK
                 }
+                _isRadicalize = false;
+                _timeSinceBeginRadicalize = 0;
             }
         }
-        _isRadicalize = false;
-        _timeSinceBeginRadicalize = 0;
+        else if (_isRadicalize)
+        {
+            _isRadicalize = false;
+            _timeSinceBeginRadicalize = 0;
+        }
     }
 }
