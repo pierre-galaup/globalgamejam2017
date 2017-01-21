@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
 
     public PlayerRadicalization PlayerRadicalization;
 
+    public LeaderBoard LeaderBoard;
+
     public static GameManager Instance { get; private set; }
 
     private void Awake()
@@ -24,6 +26,6 @@ public class GameManager : MonoBehaviour
 
     public void EndTimer()
     {
-        // TODO : End of game by time
+        GuiManager.DisplayEndOfGame();
     }
 }

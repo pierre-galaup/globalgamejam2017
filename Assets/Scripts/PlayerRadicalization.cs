@@ -48,7 +48,7 @@ public class PlayerRadicalization : MonoBehaviour
                 {
                     foreach (GameObject npc in _npcsOnTrigger)
                     {
-                        // TODO : Radicalize OK
+                        npc.GetComponent<NpcStats>().Radicalize();
                     }
                 }
                 else
