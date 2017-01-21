@@ -5,7 +5,7 @@ public class PlayerRadicalization : MonoBehaviour
 {
     public int NumberOfNpcCanBeRadicalizaed = 1;
 
-    public float TimeNeededForRadicalize = 2;
+    public float TimeNeededForRadicalize = 2f;
 
     private bool _isRadicalize = false;
     private float _timeSinceBeginRadicalize = 0f;
@@ -46,7 +46,10 @@ public class PlayerRadicalization : MonoBehaviour
                 Debug.Log("TIME SINCE BEGIN : " + _timeSinceBeginRadicalize);
                 if (_timeSinceBeginRadicalize <= TimeNeededForRadicalize)
                 {
-                    // TODO : Radicalize OK
+                    foreach (GameObject npc in _npcsOnTrigger)
+                    {
+                        // TODO : Radicalize OK
+                    }
                 }
                 else
                 {
