@@ -9,7 +9,8 @@ public class PlayerRadicalization : MonoBehaviour
 
     private bool _isRadicalize = false;
     private float _timeSinceBeginRadicalize = 0f;
-    private readonly List<GameObject> _npcsOnTrigger = new List<GameObject>();
+
+    public List<GameObject> _npcsOnTrigger = new List<GameObject>();
 
     public void OnTriggerEnterNpc(GameObject npc)
     {
@@ -56,10 +57,9 @@ public class PlayerRadicalization : MonoBehaviour
                 {
                     // TODO : Radicalize NOT OK
                 }
-
-                _isRadicalize = false;
-                _timeSinceBeginRadicalize = 0;
             }
         }
+        _isRadicalize = false;
+        _timeSinceBeginRadicalize = 0;
     }
 }

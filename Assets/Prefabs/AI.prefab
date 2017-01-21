@@ -753,6 +753,7 @@ GameObject:
   - component: {fileID: 114735993432465178}
   - component: {fileID: 114900560694267174}
   - component: {fileID: 114819016581104188}
+  - component: {fileID: 114787227744672668}
   m_Layer: 0
   m_Name: CHAR_IA
   m_TagString: IA
@@ -941,8 +942,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1778752371833576}
-  m_LocalRotation: {x: 0, y: -0.46174863, z: 0, w: 0.8870109}
-  m_LocalPosition: {x: 5.53, y: 0, z: -0.61}
+  m_LocalRotation: {x: -0, y: -0.27596635, z: -0, w: 0.96116734}
+  m_LocalPosition: {x: 0, y: 0, z: -1.061}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4253505514815426}
@@ -2960,6 +2961,18 @@ MonoBehaviour:
   RoamingType: 2
   MaxMovingTime: 3
   RoamingProbability: 0.75
+--- !u!114 &114787227744672668
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1834982165117488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82ee6efa75db97e40b945a5226a1bef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsRadicalized: 0
 --- !u!114 &114819016581104188
 MonoBehaviour:
   m_ObjectHideFlags: 1
