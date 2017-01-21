@@ -48,6 +48,7 @@ public class PlayerRadicalization : MonoBehaviour
                 {
                     foreach (GameObject npc in _npcsOnTrigger)
                     {
+                        GameManager.Instance.AddRadicalized();
                         npc.GetComponent<NpcStats>().Radicalize();
                     }
                 }

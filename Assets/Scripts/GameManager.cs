@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
 
     public LeaderBoard LeaderBoard;
 
+    private int _numberOfRadicalized = 0;
+
     public static GameManager Instance { get; private set; }
 
     private void Awake()
@@ -27,5 +29,11 @@ public class GameManager : MonoBehaviour
     public void EndTimer()
     {
         GuiManager.DisplayEndOfGame();
+    }
+
+    public void AddRadicalized(int number = 1)
+    {
+        _numberOfRadicalized += number;
+        GuiManager.UpdateComradeNumber(_numberOfRadicalized.ToString(), "5");
     }
 }

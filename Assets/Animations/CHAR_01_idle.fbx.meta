@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: d951c9b17f8c3904488255956ef4255a
-timeCreated: 1484987946
+guid: e2970b0e35dfe0d4784c150a74d0f970
+timeCreated: 1485002006
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -44,6 +44,7 @@ ModelImporter:
     100072: m_tete
     100074: m_tronc
     100076: main_D
+    100078: skeleton
     400000: //RootNode
     400002: j_avantbras_D
     400004: j_avantbras_G
@@ -83,6 +84,7 @@ ModelImporter:
     400072: m_tete
     400074: m_tronc
     400076: main_D
+    400078: skeleton
     2300000: m_avantbras_D
     2300002: m_avantbras_G
     2300004: m_bras_D
@@ -140,6 +142,7 @@ ModelImporter:
     4300032: m_pied_D
     4300034: m_jambe_D
     4300036: m_pelvis
+    7400000: Take 001
     9500000: //RootNode
   materials:
     importMaterials: 1
