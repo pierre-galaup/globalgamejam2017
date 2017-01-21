@@ -61,8 +61,6 @@ public class RoamingAi : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("STATE [" + this.state + "]");
-        Debug.Log("ROAMING [" + this.RoamingType + "]");
         if (this.RoamingType != ERoamingType.NoRoaming)
             this.stateActions[this.state]();
 	}
@@ -112,7 +110,6 @@ public class RoamingAi : MonoBehaviour
     {
         var randDirection = UnityEngine.Random.insideUnitSphere * dist + origin;
         NavMeshHit navHit;
-        Debug.Log("Looking for a new target");
         var attemps = 0;
         while (attemps < 10)
         {
@@ -120,7 +117,6 @@ public class RoamingAi : MonoBehaviour
                 return navHit.position;
             ++attemps;
         }
-        Debug.Log("Forgot how to move.");
         return Vector3.zero;
     }
 }
