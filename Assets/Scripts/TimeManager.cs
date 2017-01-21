@@ -45,7 +45,7 @@ namespace GameTime
             return _timer;
         }
 
-        public string GetCurrentTime()
+        private string GetCurrentTime()
         {
             string minutes = ((int)(_timer / 60)).ToString(CultureInfo.InvariantCulture);
             string seconds = (_timer % 60).ToString(CultureInfo.InvariantCulture);
