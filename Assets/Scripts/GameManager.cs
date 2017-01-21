@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
 
     public GuiManager GuiManager;
 
+    public PlayerRadicalization PlayerRadicalization;
+
     public static GameManager Instance { get; private set; }
 
     private void Awake()
@@ -22,5 +24,6 @@ public class GameManager : MonoBehaviour
 
     public void EndTimer()
     {
+        // TODO : End of game by time
     }
 }

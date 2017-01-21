@@ -637,6 +637,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: -0.11041513
       objectReference: {fileID: 0}
+    - target: {fileID: 149790, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 2}
   m_IsPrefabParent: 0
@@ -1517,6 +1521,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: ef49f1b964934b44fa36696d8e398762, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ef49f1b964934b44fa36696d8e398762, type: 3}
   m_IsPrefabParent: 0
@@ -2160,6 +2168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeManager: {fileID: 1196249847}
   GuiManager: {fileID: 1592634525}
+  PlayerRadicalization: {fileID: 0}
 --- !u!1 &1292789651
 GameObject:
   m_ObjectHideFlags: 0
@@ -2605,9 +2614,11 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1524132202}
+  - component: {fileID: 1524132203}
+  - component: {fileID: 1524132204}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2626,6 +2637,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1524132203
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1524132201}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.6
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1524132204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1524132201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d83b5339628aa14b81adb63938052d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NumberOfNpcCanBeRadicalizaed: 1
+  TimeNeededForRadicalize: 2
 --- !u!1 &1527026882
 GameObject:
   m_ObjectHideFlags: 0
