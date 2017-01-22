@@ -1,10 +1,12 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
 
 [System.Serializable]
 public class NpcStats : MonoBehaviour
 {
+    [SerializeField]
+    private Material _redMaterial;
+
     public bool IsRadicalized = false;
 
     [SerializeField]
@@ -43,6 +45,15 @@ public class NpcStats : MonoBehaviour
     [SerializeField]
     private MeshRenderer _eyebrowL;
 
+    [SerializeField]
+    private MeshRenderer _shirt;
+
+    [SerializeField]
+    private MeshRenderer _armL;
+
+    [SerializeField]
+    private MeshRenderer _armR;
+
     public float Speed;
     public float Resist;
     public bool WontStop;
@@ -68,6 +79,11 @@ public class NpcStats : MonoBehaviour
 
         _eyebrowR = gameObject.transform.Find("skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oeil_D/m_sourcil_D").GetComponent<MeshRenderer>();
         _eyebrowL = gameObject.transform.Find("skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oeil_G/m_sourcil_G").GetComponent<MeshRenderer>();
+
+        _shirt = gameObject.transform.Find("skeleton/j_pelvis/j_tronc/m_tronc").GetComponent<MeshRenderer>();
+
+        _armL = gameObject.transform.Find("skeleton/j_pelvis/j_tronc/j_bras_G/m_bras_G").GetComponent<MeshRenderer>();
+        _armR = gameObject.transform.Find("skeleton/j_pelvis/j_tronc/j_bras_D/m_bras_D").GetComponent<MeshRenderer>();
     }
 
     public void Radicalize()
@@ -89,7 +105,6 @@ public class NpcStats : MonoBehaviour
         this.Speed = Random.Range(1f, 5f);
         this.agent.speed = this.Speed;
         this.character.AnimSpeedMultipliter = this.Speed * 3;
-        
     }
 
     private void Start()
@@ -142,6 +157,10 @@ public class NpcStats : MonoBehaviour
 
         _eyebrowL.enabled = true;
         _eyebrowR.enabled = true;
+
+        _shirt.material = _redMaterial;
+        _armL.material = _redMaterial;
+        _armR.material = _redMaterial;
     }
 
     public void DisplayWhiteEyes()
