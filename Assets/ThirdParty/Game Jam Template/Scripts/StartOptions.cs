@@ -2,10 +2,12 @@
 using System.Collections;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class StartOptions : MonoBehaviour
 {
     public GameObject BackGround;
+    public Sprite ImageIntro;
 
     public int sceneToStart = 1;                                        //Index number in build settings of scene to load if changeScenes is true
     public bool changeScenes;                                           //If true, load a new scene when Start is pressed, if false, fade out UI and continue in single scene
@@ -46,6 +48,17 @@ public class StartOptions : MonoBehaviour
         {
             playMusic.FadeDown(fadeColorAnimationClip.length);
         }
+
+        showPanels.HideMenu();
+
+        BackGround.GetComponent<Image>().sprite = ImageIntro;
+
+        StartCoroutine(Next());
+    }
+
+    private IEnumerator Next()
+    {
+        yield return new WaitForSeconds(7f);
 
         //If changeScenes is true, start fading and change scenes halfway through animation when screen is blocked by FadeImage
         if (changeScenes)
