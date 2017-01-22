@@ -81,6 +81,7 @@ public class PlayerRadicalization : MonoBehaviour
             {
                 if (_timeSinceBeginRadicalize >= TimeNeededForRadicalize) // is radicalized
                 {
+                    GetComponent<AudioSource>().Play();
                     GameManager.Instance.GuiManager.ActionPanel.SetActive(false);
                     foreach (GameObject npc in _npcsOnTrigger)
                     {
@@ -88,6 +89,9 @@ public class PlayerRadicalization : MonoBehaviour
                         {
                             GameManager.Instance.AddRadicalized();
                             npc.GetComponent<NpcStats>().Radicalize();
+                            npc.GetComponentInChildren<Light>().DOIntensity(2.25f, 1.5f);
+                            GameObject npc1 = npc;
+                            DOTween.To(() => npc1.GetComponentInChildren<Light>().spotAngle, x => npc1.GetComponentInChildren<Light>().spotAngle = x, 63.17f, 1.5f);
                             StartCoroutine(WaitForWalk(npc));
                         }
                     }
@@ -124,6 +128,8 @@ public class PlayerRadicalization : MonoBehaviour
                 this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("showBook"))
                 this.GetComponent<Animator>().SetTrigger("StopShowBook");
         }
+        else
+            GameManager.Instance.GuiManager.ActionPanel.SetActive(false);
     }
 
     private IEnumerator WaitForWalk(GameObject npc)
@@ -131,8 +137,15 @@ public class PlayerRadicalization : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         var roaming = npc.GetComponent<RoamingAi>();
         if (roaming != null)
+        {
             roaming.StopListening();
+            npc.GetComponent<UserAICharacterControl>().target = transform;
+            //roaming.Target = transform;
+        }
         else
+        {
             npc.GetComponent<NavMeshController>().ResumeNavigation();
+            npc.GetComponent<UserAICharacterControl>().target = transform;
+        }
     }
 }
