@@ -39,6 +39,6 @@ public class GameManager : MonoBehaviour
     public void AddRadicalized(int number = 1)
     {
         _numberOfRadicalized += number;
-        GuiManager.UpdateComradeNumber(_numberOfRadicalized.ToString(), "5");
+        GuiManager.UpdateComradeNumber(_numberOfRadicalized.ToString());
     }
 }
