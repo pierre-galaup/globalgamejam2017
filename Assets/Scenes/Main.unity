@@ -8143,6 +8143,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NumberOfNpcCanBeRadicalizaed: 1
   TimeNeededForRadicalize: 2
+  BookClip: {fileID: 8300000, guid: 1a547d1263035b04fa3e6b30058d9c08, type: 3}
+  RevelationClip: {fileID: 8300000, guid: 7d760cd6d84bb714e931fd3da4ad37dd, type: 3}
   _npcsOnTrigger: []
 --- !u!135 &2019730179
 SphereCollider:

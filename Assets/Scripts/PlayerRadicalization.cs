@@ -9,6 +9,12 @@ public class PlayerRadicalization : MonoBehaviour
 
     public float TimeNeededForRadicalize = 2f;
 
+    [SerializeField]
+    private AudioClip BookClip;
+
+    [SerializeField]
+    private AudioClip RevelationClip;
+
     private bool _isRadicalizing = false;
     private float _timeSinceBeginRadicalize = 0f;
     private bool _animLaunched = false;
@@ -53,7 +59,7 @@ public class PlayerRadicalization : MonoBehaviour
                 _animLaunched = false;
 
                 GetComponent<Animator>().SetTrigger("ShowBook");
-
+                GetComponent<AudioSource>().PlayOneShot(this.BookClip);
                 foreach (GameObject npc in _npcsOnTrigger)
                 {
                     var roaming = npc.GetComponent<RoamingAi>();
@@ -74,6 +80,7 @@ public class PlayerRadicalization : MonoBehaviour
                 {
                     npc.GetComponent<Animator>().SetTrigger("Radicalized");
                     npc.GetComponentInChildren<Light>().DOIntensity(6.32f, 2.5f);
+                    GetComponent<AudioSource>().PlayOneShot(this.RevelationClip);
                 }
             }
 
