@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 [System.Serializable]
 public class NpcStats : MonoBehaviour
@@ -42,6 +43,13 @@ public class NpcStats : MonoBehaviour
     [SerializeField]
     private MeshRenderer _eyebrowL;
 
+    public float Speed;
+    public float Resist;
+    public bool WontStop;
+
+    private NavMeshAgent agent;
+    private UserThirdPersonCharacter character;
+
     private void Awake()
     {
         _scarf1 = gameObject.transform.Find("skeleton/j_pelvis/j_tronc/m_echarpe1").GetComponent<MeshRenderer>();
@@ -70,8 +78,21 @@ public class NpcStats : MonoBehaviour
         _bigEyeR.enabled = false;
     }
 
+    private void InitStats()
+    {
+        this.agent = this.GetComponent<NavMeshAgent>();
+        this.character = this.GetComponent<UserThirdPersonCharacter>();
+        if (this.agent == null || this.character == null)
+            return;
+        this.Speed = Random.Range(1f, 5f);
+        this.agent.speed = this.Speed;
+        this.character.AnimSpeedMultipliter = this.Speed * 3;
+        
+    }
+
     private void Start()
     {
+        this.InitStats();
         Animator animator = GetComponent<Animator>();
         if (animator.runtimeAnimatorController.animationClips[2].events.Length == 0)
         {

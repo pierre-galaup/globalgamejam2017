@@ -24,8 +24,20 @@ public class UserThirdPersonCharacter : MonoBehaviour
     [SerializeField]
     private float m_MoveSpeedMultiplier = 1f;
 
+    public float MoveSpeedMultiplier
+    {
+        get { return this.m_MoveSpeedMultiplier; }
+        set { this.m_MoveSpeedMultiplier = value; }
+    }
+
     [SerializeField]
     private float m_AnimSpeedMultiplier = 1f;
+
+    public float AnimSpeedMultipliter
+    {
+        get { return this.m_AnimSpeedMultiplier; }
+        set { this.m_AnimSpeedMultiplier = value; }
+    }
 
     [SerializeField]
     private float m_GroundCheckDistance = 0.1f;
