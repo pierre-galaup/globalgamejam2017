@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        TimeManager.StartTimer(2000);
+        TimeManager.StartTimer(45);
     }
 
     public int GetNumberOfRadicalized()
