@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
 
     public void EndTimer()
     {
+        GetComponent<AudioSource>().Play();
         GuiManager.DisplayEndOfGame();
     }
 
