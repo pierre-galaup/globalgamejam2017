@@ -2,7 +2,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using Random = System.Random;
 
 public class GuiManager : MonoBehaviour
 {
@@ -50,11 +49,20 @@ public class GuiManager : MonoBehaviour
 
         int score = GameManager.Instance.GetNumberOfRadicalized();
 
-        GameManager.Instance.LeaderBoard.SaveNewScoreMap1(score);
+        List<int> scores;
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            scores = GameManager.Instance.LeaderBoard.GetScores(1);
+            GameManager.Instance.LeaderBoard.SaveNewScoreMap1(score);
+        }
+        else
+        {
+            scores = GameManager.Instance.LeaderBoard.GetScores(2);
+            GameManager.Instance.LeaderBoard.SaveNewScoreMap2(score);
+        }
 
         _endGameScoreText.text = "Your score : " + score;
 
-        List<int> scores = GameManager.Instance.LeaderBoard.GetScores(1);
         string leaderboard = "";
         for (int i = 0; i < scores.Count; i++)
         {
