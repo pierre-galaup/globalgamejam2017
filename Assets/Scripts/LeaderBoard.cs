@@ -3,7 +3,16 @@ using UnityEngine;
 
 public class LeaderBoard : MonoBehaviour
 {
-    private readonly List<int> _scores = new List<int>
+    private readonly List<int> _scoresMap1 = new List<int>
+    {
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+    };
+
+    private readonly List<int> _scoresMap2 = new List<int>
     {
         -1,
         -1,
@@ -16,34 +25,71 @@ public class LeaderBoard : MonoBehaviour
     {
         for (int i = 0; i < 5; i++)
         {
-            if (PlayerPrefs.HasKey("score" + i))
+            if (PlayerPrefs.HasKey("map1-score" + i))
             {
-                _scores[i] = PlayerPrefs.GetInt("score" + i);
+                _scoresMap1[i] = PlayerPrefs.GetInt("map1-score" + i);
+            }
+        }
+
+        for (int i = 0; i < 5; i++)
+        {
+            if (PlayerPrefs.HasKey("map2-score" + i))
+            {
+                _scoresMap2[i] = PlayerPrefs.GetInt("map2-score" + i);
             }
         }
     }
 
-    public List<int> GetScores()
+    public List<int> GetScores(int mapNumber)
     {
-        return _scores;
+        switch (mapNumber)
+        {
+            case 1:
+                return _scoresMap1;
+
+            case 2:
+                return _scoresMap2;
+        }
+        return null;
     }
 
-    public void SaveNewScore(int newScore)
+    public void SaveNewScoreMap1(int newScore)
     {
         int i = 0;
-        while (i < _scores.Count)
+        while (i < _scoresMap1.Count)
         {
-            if (_scores[i] < newScore)
+            if (_scoresMap1[i] < newScore)
             {
                 break;
             }
             i++;
         }
 
-        _scores.Insert(i, newScore);
-        if (_scores.Count > 5)
+        _scoresMap1.Insert(i, newScore);
+        if (_scoresMap1.Count > 5)
         {
-            _scores.RemoveAt(5);
+            _scoresMap1.RemoveAt(5);
+        }
+
+        SaveScoreInPlayerPrefs();
+    }
+
+    public void SaveNewScoreMap2(int newScore)
+    {
+        int i = 0;
+        while (i < _scoresMap2.Count)
+        {
+            if (_scoresMap2[i] < newScore)
+            {
+                break;
+            }
+            i++;
+        }
+
+        _scoresMap2.Insert(i, newScore);
+        if (_scoresMap2.Count > 5)
+        {
+            _scoresMap2.RemoveAt(5);
         }
 
         SaveScoreInPlayerPrefs();
@@ -51,10 +97,16 @@ public class LeaderBoard : MonoBehaviour
 
     private void SaveScoreInPlayerPrefs()
     {
-        for (int i = 0; i < _scores.Count; i++)
+        for (int i = 0; i < _scoresMap1.Count; i++)
         {
-            PlayerPrefs.SetInt("score" + i, _scores[i]);
+            PlayerPrefs.SetInt("map1-score" + i, _scoresMap1[i]);
         }
+
+        for (int i = 0; i < _scoresMap2.Count; i++)
+        {
+            PlayerPrefs.SetInt("map2-score" + i, _scoresMap2[i]);
+        }
+
         PlayerPrefs.Save();
     }
 }

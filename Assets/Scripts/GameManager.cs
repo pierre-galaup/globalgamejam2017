@@ -26,6 +26,11 @@ public class GameManager : MonoBehaviour
         TimeManager.StartTimer(2000);
     }
 
+    public int GetNumberOfRadicalized()
+    {
+        return _numberOfRadicalized;
+    }
+
     public void EndTimer()
     {
         GuiManager.DisplayEndOfGame();

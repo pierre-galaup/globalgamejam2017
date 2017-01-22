@@ -39,18 +39,22 @@ public class GuiManager : MonoBehaviour
         _comradeNumberText.text = actuelNumber + " / " + objectiveNumber;
     }
 
+    public void UpdateComradeNumber(string actuelNumber)
+    {
+        _comradeNumberText.text = actuelNumber;
+    }
+
     public void DisplayEndOfGame()
     {
         _endGamePanel.SetActive(true);
 
-        Random r = new Random();
-        int score = r.Next(20, 250);
+        int score = GameManager.Instance.GetNumberOfRadicalized();
 
-        GameManager.Instance.LeaderBoard.SaveNewScore(score);
+        GameManager.Instance.LeaderBoard.SaveNewScoreMap1(score);
 
         _endGameScoreText.text = "Your score : " + score;
 
-        List<int> scores = GameManager.Instance.LeaderBoard.GetScores();
+        List<int> scores = GameManager.Instance.LeaderBoard.GetScores(1);
         string leaderboard = "";
         for (int i = 0; i < scores.Count; i++)
         {
@@ -75,6 +79,16 @@ public class GuiManager : MonoBehaviour
     public void Regame()
     {
         _endGamePanel.SetActive(false);
-        SceneManager.LoadScene(1);
+
+        switch (SceneManager.GetActiveScene().buildIndex)
+        {
+            case 1:
+                SceneManager.LoadScene(2);
+                break;
+
+            case 2:
+                SceneManager.LoadScene(1);
+                break;
+        }
     }
 }
