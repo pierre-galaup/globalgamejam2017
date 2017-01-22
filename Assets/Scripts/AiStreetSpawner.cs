@@ -19,7 +19,6 @@ public class AiStreetSpawner : MonoBehaviour
         if (this.objectsToSpawn == null || this.objectsToSpawn.Length == 0)
         {
             Debug.LogError("Add at least 1 item in spawner array");
-            UnityEditor.EditorApplication.isPlaying = false;
         }
     }
 
@@ -46,7 +45,6 @@ public class AiStreetSpawner : MonoBehaviour
         if (array == null || array.Length == 0)
         {
             Debug.LogError("Empty array given for GetRandomIndex");
-            UnityEditor.EditorApplication.isPlaying = false;
         }
         return array.GetValue(Random.Range(0, array.Length - 1)) as Object;
     }
