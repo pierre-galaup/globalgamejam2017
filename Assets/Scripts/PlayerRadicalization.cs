@@ -12,6 +12,7 @@ public class PlayerRadicalization : MonoBehaviour
     private bool _isRadicalizing = false;
     private float _timeSinceBeginRadicalize = 0f;
     private bool _animLaunched = false;
+    private float _animBeginTime = 0;
 
     public List<GameObject> _npcsOnTrigger = new List<GameObject>();
 
@@ -29,6 +30,11 @@ public class PlayerRadicalization : MonoBehaviour
         {
             _npcsOnTrigger.Remove(npc);
         }
+    }
+
+    private void Start()
+    {
+        _animBeginTime = TimeNeededForRadicalize - 1.05f;
     }
 
     private void Update()
@@ -60,7 +66,7 @@ public class PlayerRadicalization : MonoBehaviour
                 }
             }
 
-            if (_timeSinceBeginRadicalize >= 0.95f && !_animLaunched)
+            if (_timeSinceBeginRadicalize >= _animBeginTime && !_animLaunched)
             {
                 _animLaunched = true;
                 foreach (GameObject npc in _npcsOnTrigger)
@@ -69,7 +75,7 @@ public class PlayerRadicalization : MonoBehaviour
                 }
             }
 
-            if (_timeSinceBeginRadicalize >= 2 || Input.GetButtonUp("Radicalize"))
+            if (_timeSinceBeginRadicalize >= TimeNeededForRadicalize || Input.GetButtonUp("Radicalize"))
             {
                 if (_timeSinceBeginRadicalize >= TimeNeededForRadicalize)
                 {
