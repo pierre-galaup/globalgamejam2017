@@ -39,8 +39,9 @@ public class PlayerRadicalization : MonoBehaviour
 
     private void Update()
     {
-        if (_npcsOnTrigger.Count >= 1 && _npcsOnTrigger.Count <= NumberOfNpcCanBeRadicalizaed)
+        if (_npcsOnTrigger.Count >= 1 && _npcsOnTrigger.Count <= NumberOfNpcCanBeRadicalizaed) // can radicalize
         {
+            GameManager.Instance.GuiManager.ActionPanel.SetActive(true);
             if (_isRadicalizing)
             {
                 _timeSinceBeginRadicalize += Time.deltaTime;
@@ -77,8 +78,9 @@ public class PlayerRadicalization : MonoBehaviour
 
             if (_timeSinceBeginRadicalize >= TimeNeededForRadicalize || Input.GetButtonUp("Radicalize"))
             {
-                if (_timeSinceBeginRadicalize >= TimeNeededForRadicalize)
+                if (_timeSinceBeginRadicalize >= TimeNeededForRadicalize) // is radicalized
                 {
+                    GameManager.Instance.GuiManager.ActionPanel.SetActive(false);
                     foreach (GameObject npc in _npcsOnTrigger)
                     {
                         if (!npc.GetComponent<NpcStats>().IsRadicalized)
@@ -90,8 +92,9 @@ public class PlayerRadicalization : MonoBehaviour
                     }
                     _npcsOnTrigger.Clear();
                 }
-                else
+                else // need more time (cancelled)
                 {
+                    GameManager.Instance.GuiManager.ActionPanel.SetActive(false);
                     foreach (GameObject npc in _npcsOnTrigger)
                     {
                         var roaming = npc.GetComponent<RoamingAi>();
@@ -109,8 +112,9 @@ public class PlayerRadicalization : MonoBehaviour
                 _animLaunched = false;
             }
         }
-        else if (_isRadicalizing)
+        else if (_isRadicalizing) // interrup by an AI or move
         {
+            GameManager.Instance.GuiManager.ActionPanel.SetActive(false);
             _isRadicalizing = false;
             _timeSinceBeginRadicalize = 0;
             if (this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("showbookLoop") ||

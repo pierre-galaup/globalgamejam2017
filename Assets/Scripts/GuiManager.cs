@@ -23,6 +23,8 @@ public class GuiManager : MonoBehaviour
     [SerializeField]
     private Text _endGameLeaderboardText;
 
+    public GameObject ActionPanel;
+
     public void UpdateTime(string newTime)
     {
         _timeText.text = newTime;
