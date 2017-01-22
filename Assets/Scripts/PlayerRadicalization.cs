@@ -48,7 +48,12 @@ public class PlayerRadicalization : MonoBehaviour
 
                 foreach (GameObject npc in _npcsOnTrigger)
                 {
-                    npc.GetComponent<RoamingAi>().StartListening();
+                    var roaming = npc.GetComponent<RoamingAi>();
+                    if (roaming != null)
+                        roaming.StartListening();
+                    else
+                        npc.GetComponent<NavMeshController>().StopNavigation();
+
                     transform.DOLookAt(npc.transform.position, 0.5f);
                     npc.transform.DOLookAt(transform.position, 0.5f);
                 }
@@ -81,7 +86,11 @@ public class PlayerRadicalization : MonoBehaviour
                 {
                     foreach (GameObject npc in _npcsOnTrigger)
                     {
-                        npc.GetComponent<RoamingAi>().StopListening();
+                        var roaming = npc.GetComponent<RoamingAi>();
+                        if (roaming != null)
+                            roaming.StopListening();
+                        else
+                            npc.GetComponent<NavMeshController>().ResumeNavigation();
                         npc.GetComponent<NpcStats>().HideWhiteEyes();
                         npc.GetComponent<Animator>().SetTrigger("StopRadicalized");
                     }
