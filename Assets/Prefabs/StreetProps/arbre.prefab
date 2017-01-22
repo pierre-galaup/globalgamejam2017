@@ -71,7 +71,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4154223101346802}
   - component: {fileID: 208935025348184152}
-  - component: {fileID: 65412569714287808}
+  - component: {fileID: 136937835050079036}
   m_Layer: 0
   m_Name: arbre
   m_TagString: Untagged
@@ -115,7 +115,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1346174374724078}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -178,7 +178,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 3da65070115dcc04bbd9da63680d9dc4, type: 2}
+  - {fileID: 2100000, guid: 418ded878912f2744aac7a8ab2c994d1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -317,8 +317,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1030074159753658}
   m_Mesh: {fileID: 4300004, guid: 810c827c453ca004d8dfbf71a97f50b7, type: 3}
---- !u!65 &65412569714287808
-BoxCollider:
+--- !u!136 &136937835050079036
+CapsuleCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -326,9 +326,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.6, y: 4, z: 1.6}
-  m_Center: {x: 0, y: 2, z: 0}
+  m_Radius: 0.78
+  m_Height: 3.46
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.1, z: 0}
 --- !u!208 &208935025348184152
 NavMeshObstacle:
   m_ObjectHideFlags: 1
