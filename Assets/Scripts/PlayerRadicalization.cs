@@ -72,6 +72,7 @@ public class PlayerRadicalization : MonoBehaviour
                 foreach (GameObject npc in _npcsOnTrigger)
                 {
                     npc.GetComponent<Animator>().SetTrigger("Radicalized");
+                    npc.GetComponentInChildren<Light>().DOIntensity(6.32f, 2.5f);
                 }
             }
 
@@ -101,6 +102,8 @@ public class PlayerRadicalization : MonoBehaviour
                             npc.GetComponent<NavMeshController>().ResumeNavigation();
                         npc.GetComponent<NpcStats>().HideWhiteEyes();
                         npc.GetComponent<Animator>().SetTrigger("StopRadicalized");
+                        DOTween.Kill(npc.GetComponentInChildren<Light>());
+                        npc.GetComponentInChildren<Light>().DOIntensity(0f, 1.5f);
                     }
                 }
                 GetComponent<Animator>().SetTrigger("StopShowBook");
