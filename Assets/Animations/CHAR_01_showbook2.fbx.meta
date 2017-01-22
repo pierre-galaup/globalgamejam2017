@@ -1,0 +1,629 @@
+fileFormatVersion: 2
+guid: 97e96d595cc7c254faa6af6a9bbea2dd
+timeCreated: 1485041180
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: book1couv
+    100002: book4couv
+    100004: c_skeleton
+    100006: //RootNode
+    100008: controllers
+    100010: j_avantbras_D
+    100012: j_avantbras_G
+    100014: j_book
+    100016: j_book1couv
+    100018: j_book4couv
+    100020: j_bras_D
+    100022: j_bras_G
+    100024: j_cou
+    100026: j_jambe_D
+    100028: j_jambe_G
+    100030: j_main_G
+    100032: j_nez
+    100034: j_oeil_D
+    100036: j_oeil_G
+    100038: j_oreille_D
+    100040: j_oreille_G
+    100042: j_pelvis
+    100044: j_pied_D
+    100046: j_pied_G
+    100048: j_tete
+    100050: j_tronc
+    100052: m_avantbras_D
+    100054: m_avantbras_G
+    100056: m_barbe1
+    100058: m_barbe2
+    100060: m_bras_D
+    100062: m_bras_G
+    100064: m_cheveux01
+    100066: m_cheveux01b
+    100068: m_chignon
+    100070: m_cou
+    100072: m_echarpe1
+    100074: m_echarpe2
+    100076: m_echarpe3
+    100078: m_echarpe4
+    100080: m_jambe_D
+    100082: m_jambe_G
+    100084: m_lunettes
+    100086: m_main_D
+    100088: m_main_G
+    100090: m_nez
+    100092: m_oeil_D
+    100094: m_oeil_D1
+    100096: m_oeil_endoctrined_D
+    100098: m_oeil_endoctrined_G
+    100100: m_oeil_G
+    100102: m_oeil_G1
+    100104: m_oreille_D
+    100106: m_oreille_G
+    100108: m_pelvis
+    100110: m_pied_D
+    100112: m_pied_G
+    100114: m_sourcil_D
+    100116: m_sourcil_G
+    100118: m_tete
+    100120: m_tronc
+    100122: main_D
+    100124: offset_c_skeleton
+    100126: skeleton
+    400000: book1couv
+    400002: book4couv
+    400004: c_skeleton
+    400006: //RootNode
+    400008: controllers
+    400010: j_avantbras_D
+    400012: j_avantbras_G
+    400014: j_book
+    400016: j_book1couv
+    400018: j_book4couv
+    400020: j_bras_D
+    400022: j_bras_G
+    400024: j_cou
+    400026: j_jambe_D
+    400028: j_jambe_G
+    400030: j_main_G
+    400032: j_nez
+    400034: j_oeil_D
+    400036: j_oeil_G
+    400038: j_oreille_D
+    400040: j_oreille_G
+    400042: j_pelvis
+    400044: j_pied_D
+    400046: j_pied_G
+    400048: j_tete
+    400050: j_tronc
+    400052: m_avantbras_D
+    400054: m_avantbras_G
+    400056: m_barbe1
+    400058: m_barbe2
+    400060: m_bras_D
+    400062: m_bras_G
+    400064: m_cheveux01
+    400066: m_cheveux01b
+    400068: m_chignon
+    400070: m_cou
+    400072: m_echarpe1
+    400074: m_echarpe2
+    400076: m_echarpe3
+    400078: m_echarpe4
+    400080: m_jambe_D
+    400082: m_jambe_G
+    400084: m_lunettes
+    400086: m_main_D
+    400088: m_main_G
+    400090: m_nez
+    400092: m_oeil_D
+    400094: m_oeil_D1
+    400096: m_oeil_endoctrined_D
+    400098: m_oeil_endoctrined_G
+    400100: m_oeil_G
+    400102: m_oeil_G1
+    400104: m_oreille_D
+    400106: m_oreille_G
+    400108: m_pelvis
+    400110: m_pied_D
+    400112: m_pied_G
+    400114: m_sourcil_D
+    400116: m_sourcil_G
+    400118: m_tete
+    400120: m_tronc
+    400122: main_D
+    400124: offset_c_skeleton
+    400126: skeleton
+    2300000: book1couv
+    2300002: book4couv
+    2300004: m_avantbras_D
+    2300006: m_avantbras_G
+    2300008: m_barbe1
+    2300010: m_barbe2
+    2300012: m_bras_D
+    2300014: m_bras_G
+    2300016: m_cheveux01
+    2300018: m_cheveux01b
+    2300020: m_chignon
+    2300022: m_cou
+    2300024: m_echarpe1
+    2300026: m_echarpe2
+    2300028: m_echarpe3
+    2300030: m_echarpe4
+    2300032: m_jambe_D
+    2300034: m_jambe_G
+    2300036: m_lunettes
+    2300038: m_main_D
+    2300040: m_main_G
+    2300042: m_nez
+    2300044: m_oeil_D
+    2300046: m_oeil_D1
+    2300048: m_oeil_endoctrined_D
+    2300050: m_oeil_endoctrined_G
+    2300052: m_oeil_G
+    2300054: m_oeil_G1
+    2300056: m_oreille_D
+    2300058: m_oreille_G
+    2300060: m_pelvis
+    2300062: m_pied_D
+    2300064: m_pied_G
+    2300066: m_sourcil_D
+    2300068: m_sourcil_G
+    2300070: m_tete
+    2300072: m_tronc
+    3300000: book1couv
+    3300002: book4couv
+    3300004: m_avantbras_D
+    3300006: m_avantbras_G
+    3300008: m_barbe1
+    3300010: m_barbe2
+    3300012: m_bras_D
+    3300014: m_bras_G
+    3300016: m_cheveux01
+    3300018: m_cheveux01b
+    3300020: m_chignon
+    3300022: m_cou
+    3300024: m_echarpe1
+    3300026: m_echarpe2
+    3300028: m_echarpe3
+    3300030: m_echarpe4
+    3300032: m_jambe_D
+    3300034: m_jambe_G
+    3300036: m_lunettes
+    3300038: m_main_D
+    3300040: m_main_G
+    3300042: m_nez
+    3300044: m_oeil_D
+    3300046: m_oeil_D1
+    3300048: m_oeil_endoctrined_D
+    3300050: m_oeil_endoctrined_G
+    3300052: m_oeil_G
+    3300054: m_oeil_G1
+    3300056: m_oreille_D
+    3300058: m_oreille_G
+    3300060: m_pelvis
+    3300062: m_pied_D
+    3300064: m_pied_G
+    3300066: m_sourcil_D
+    3300068: m_sourcil_G
+    3300070: m_tete
+    3300072: m_tronc
+    4300000: m_nez
+    4300002: m_oeil_G
+    4300004: m_oeil_endoctrined_G
+    4300006: m_oeil_G1
+    4300008: m_sourcil_G
+    4300010: m_oeil_D
+    4300012: m_oeil_endoctrined_D
+    4300014: m_oeil_D1
+    4300016: m_sourcil_D
+    4300018: m_oreille_G
+    4300020: m_oreille_D
+    4300022: m_tete
+    4300024: m_lunettes
+    4300026: m_cheveux01
+    4300028: m_cheveux01b
+    4300030: m_chignon
+    4300032: m_barbe1
+    4300034: m_barbe2
+    4300036: m_cou
+    4300038: m_main_G
+    4300040: book1couv
+    4300042: book4couv
+    4300044: m_avantbras_G
+    4300046: m_bras_G
+    4300048: m_main_D
+    4300050: m_avantbras_D
+    4300052: m_bras_D
+    4300054: m_tronc
+    4300056: m_echarpe3
+    4300058: m_echarpe4
+    4300060: m_echarpe2
+    4300062: m_echarpe1
+    4300064: m_pied_G
+    4300066: m_jambe_G
+    4300068: m_pied_D
+    4300070: m_jambe_D
+    4300072: m_pelvis
+    7400000: showbook
+    7400002: showbookLoop
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: showbook
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 36
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: controllers
+        weight: 1
+      - path: controllers/offset_c_skeleton
+        weight: 1
+      - path: controllers/offset_c_skeleton/c_skeleton
+        weight: 1
+      - path: skeleton
+        weight: 1
+      - path: skeleton/j_pelvis
+        weight: 1
+      - path: skeleton/j_pelvis/j_jambe_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_jambe_D/j_pied_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_jambe_D/j_pied_D/m_pied_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_jambe_D/m_jambe_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_jambe_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_jambe_G/j_pied_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_jambe_G/j_pied_G/m_pied_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_jambe_G/m_jambe_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_D/j_avantbras_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_D/j_avantbras_D/m_avantbras_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_D/j_avantbras_D/main_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_D/j_avantbras_D/main_D/m_main_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_D/m_bras_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_G/j_avantbras_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_G/j_avantbras_G/j_book
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_G/j_avantbras_G/j_book/j_book1couv
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_G/j_avantbras_G/j_book/j_book1couv/book1couv
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_G/j_avantbras_G/j_book/j_book4couv
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_G/j_avantbras_G/j_book/j_book4couv/book4couv
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_G/j_avantbras_G/j_main_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_G/j_avantbras_G/j_main_G/m_main_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_G/j_avantbras_G/m_avantbras_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_G/m_bras_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_nez
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_nez/m_nez
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oeil_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oeil_D/m_oeil_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oeil_D/m_oeil_D1
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oeil_D/m_oeil_endoctrined_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oeil_D/m_sourcil_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oeil_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oeil_G/m_oeil_endoctrined_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oeil_G/m_oeil_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oeil_G/m_oeil_G1
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oeil_G/m_sourcil_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oreille_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oreille_D/m_oreille_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oreille_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oreille_G/m_oreille_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/m_barbe1
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/m_barbe2
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/m_cheveux01
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/m_cheveux01b
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/m_chignon
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/m_lunettes
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/m_tete
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/m_cou
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/m_echarpe1
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/m_echarpe2
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/m_echarpe3
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/m_echarpe4
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/m_tronc
+        weight: 1
+      - path: skeleton/j_pelvis/m_pelvis
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: showbookLoop
+      takeName: Take 001
+      firstFrame: 11
+      lastFrame: 36
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: controllers
+        weight: 1
+      - path: controllers/offset_c_skeleton
+        weight: 1
+      - path: controllers/offset_c_skeleton/c_skeleton
+        weight: 1
+      - path: skeleton
+        weight: 1
+      - path: skeleton/j_pelvis
+        weight: 1
+      - path: skeleton/j_pelvis/j_jambe_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_jambe_D/j_pied_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_jambe_D/j_pied_D/m_pied_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_jambe_D/m_jambe_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_jambe_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_jambe_G/j_pied_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_jambe_G/j_pied_G/m_pied_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_jambe_G/m_jambe_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_D/j_avantbras_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_D/j_avantbras_D/m_avantbras_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_D/j_avantbras_D/main_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_D/j_avantbras_D/main_D/m_main_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_D/m_bras_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_G/j_avantbras_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_G/j_avantbras_G/j_book
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_G/j_avantbras_G/j_book/j_book1couv
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_G/j_avantbras_G/j_book/j_book1couv/book1couv
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_G/j_avantbras_G/j_book/j_book4couv
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_G/j_avantbras_G/j_book/j_book4couv/book4couv
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_G/j_avantbras_G/j_main_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_G/j_avantbras_G/j_main_G/m_main_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_G/j_avantbras_G/m_avantbras_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_bras_G/m_bras_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_nez
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_nez/m_nez
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oeil_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oeil_D/m_oeil_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oeil_D/m_oeil_D1
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oeil_D/m_oeil_endoctrined_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oeil_D/m_sourcil_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oeil_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oeil_G/m_oeil_endoctrined_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oeil_G/m_oeil_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oeil_G/m_oeil_G1
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oeil_G/m_sourcil_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oreille_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oreille_D/m_oreille_D
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oreille_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/j_oreille_G/m_oreille_G
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/m_barbe1
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/m_barbe2
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/m_cheveux01
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/m_cheveux01b
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/m_chignon
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/m_lunettes
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/j_tete/m_tete
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/j_cou/m_cou
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/m_echarpe1
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/m_echarpe2
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/m_echarpe3
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/m_echarpe4
+        weight: 1
+      - path: skeleton/j_pelvis/j_tronc/m_tronc
+        weight: 1
+      - path: skeleton/j_pelvis/m_pelvis
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

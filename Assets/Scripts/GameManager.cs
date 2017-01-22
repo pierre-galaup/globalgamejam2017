@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        TimeManager.StartTimer(60);
+        TimeManager.StartTimer(2000);
     }
 
     public void EndTimer()

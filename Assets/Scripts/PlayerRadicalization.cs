@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class PlayerRadicalization : MonoBehaviour
@@ -7,14 +8,15 @@ public class PlayerRadicalization : MonoBehaviour
 
     public float TimeNeededForRadicalize = 2f;
 
-    private bool _isRadicalize = false;
+    private bool _isRadicalizing = false;
     private float _timeSinceBeginRadicalize = 0f;
+    private bool _animLaunched = false;
 
     public List<GameObject> _npcsOnTrigger = new List<GameObject>();
 
     public void OnTriggerEnterNpc(GameObject npc)
     {
-        if (!_npcsOnTrigger.Contains(npc))
+        if (!_npcsOnTrigger.Contains(npc) && !npc.GetComponent<NpcStats>().IsRadicalized)
         {
             _npcsOnTrigger.Add(npc);
         }
@@ -32,46 +34,67 @@ public class PlayerRadicalization : MonoBehaviour
     {
         if (_npcsOnTrigger.Count >= 1 && _npcsOnTrigger.Count <= NumberOfNpcCanBeRadicalizaed)
         {
-            if (_isRadicalize)
+            if (_isRadicalizing)
             {
                 _timeSinceBeginRadicalize += Time.deltaTime;
             }
 
             if (Input.GetButtonDown("Radicalize"))
             {
-                _isRadicalize = true;
+                _isRadicalizing = true;
+                _animLaunched = false;
+
+                GetComponent<Animator>().SetTrigger("ShowBook");
+
                 foreach (GameObject npc in _npcsOnTrigger)
                 {
                     npc.GetComponent<RoamingAi>().StartListening();
+                    transform.DOLookAt(npc.transform.position, 0.5f);
+                    npc.transform.DOLookAt(transform.position, 0.5f);
                 }
             }
 
-            if (Input.GetButtonUp("Radicalize"))
+            if (_timeSinceBeginRadicalize >= 0.95f && !_animLaunched)
             {
-                Debug.Log("TIME SINCE BEGIN : " + _timeSinceBeginRadicalize);
+                _animLaunched = true;
+                foreach (GameObject npc in _npcsOnTrigger)
+                {
+                    npc.GetComponent<Animator>().SetTrigger("Radicalized");
+                }
+            }
+
+            if (_timeSinceBeginRadicalize >= 2 || Input.GetButtonUp("Radicalize"))
+            {
                 if (_timeSinceBeginRadicalize >= TimeNeededForRadicalize)
                 {
                     foreach (GameObject npc in _npcsOnTrigger)
                     {
-                        GameManager.Instance.AddRadicalized();
-                        npc.GetComponent<NpcStats>().Radicalize();
+                        if (!npc.GetComponent<NpcStats>().IsRadicalized)
+                        {
+                            GameManager.Instance.AddRadicalized();
+                            npc.GetComponent<NpcStats>().Radicalize();
+                        }
                     }
+                    _npcsOnTrigger.Clear();
                 }
                 else
                 {
                     foreach (GameObject npc in _npcsOnTrigger)
                     {
                         npc.GetComponent<RoamingAi>().StopListening();
+                        npc.GetComponent<NpcStats>().HideWhiteEyes();
+                        npc.GetComponent<Animator>().SetTrigger("StopRadicalized");
                     }
-                    // TODO : Radicalize NOT OK
                 }
-                _isRadicalize = false;
+                GetComponent<Animator>().SetTrigger("StopShowBook");
+                _isRadicalizing = false;
                 _timeSinceBeginRadicalize = 0;
+                _animLaunched = false;
             }
         }
-        else if (_isRadicalize)
+        else if (_isRadicalizing)
         {
-            _isRadicalize = false;
+            _isRadicalizing = false;
             _timeSinceBeginRadicalize = 0;
         }
     }
