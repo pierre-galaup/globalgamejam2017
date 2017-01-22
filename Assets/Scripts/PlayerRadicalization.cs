@@ -107,12 +107,19 @@ public class PlayerRadicalization : MonoBehaviour
         {
             _isRadicalizing = false;
             _timeSinceBeginRadicalize = 0;
+            if (this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("showbookLoop") ||
+                this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("showBook"))
+                this.GetComponent<Animator>().SetTrigger("StopShowBook");
         }
     }
 
     private IEnumerator WaitForWalk(GameObject npc)
     {
         yield return new WaitForSeconds(1.5f);
-        npc.GetComponent<RoamingAi>().StopListening();
+        var roaming = npc.GetComponent<RoamingAi>();
+        if (roaming != null)
+            roaming.StopListening();
+        else
+            npc.GetComponent<NavMeshController>().ResumeNavigation();
     }
 }
