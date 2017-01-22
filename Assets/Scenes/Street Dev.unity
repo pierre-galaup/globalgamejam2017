@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.613
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3547943, g: 0.3955324, b: 0.45903027, a: 0.613}
+  m_IndirectSpecularColor: {r: 0.3578325, g: 0.39839196, b: 0.457667, a: 0.613}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2055,7 +2055,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 25915666fedc74a49ba15681efff9006, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.8
+  m_Volume: 0.95
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -10833,6 +10833,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NumberOfNpcCanBeRadicalizaed: 1
   TimeNeededForRadicalize: 2
+  BookClip: {fileID: 8300000, guid: 1a547d1263035b04fa3e6b30058d9c08, type: 3}
+  RevelationClip: {fileID: 8300000, guid: 7d760cd6d84bb714e931fd3da4ad37dd, type: 3}
   _npcsOnTrigger: []
 --- !u!1 &2094314949
 GameObject:
