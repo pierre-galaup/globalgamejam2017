@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 
@@ -78,6 +79,7 @@ public class PlayerRadicalization : MonoBehaviour
                         {
                             GameManager.Instance.AddRadicalized();
                             npc.GetComponent<NpcStats>().Radicalize();
+                            StartCoroutine(WaitForWalk(npc));
                         }
                     }
                     _npcsOnTrigger.Clear();
@@ -106,5 +108,11 @@ public class PlayerRadicalization : MonoBehaviour
             _isRadicalizing = false;
             _timeSinceBeginRadicalize = 0;
         }
+    }
+
+    private IEnumerator WaitForWalk(GameObject npc)
+    {
+        yield return new WaitForSeconds(1.5f);
+        npc.GetComponent<RoamingAi>().StopListening();
     }
 }
