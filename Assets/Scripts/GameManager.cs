@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
 
     public LeaderBoard LeaderBoard;
 
+    public float GameDuration = 45;
+
     private int _numberOfRadicalized = 0;
 
     public static GameManager Instance { get; private set; }
@@ -23,7 +25,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        TimeManager.StartTimer(45);
+        TimeManager.StartTimer(GameDuration);
     }
 
     public int GetNumberOfRadicalized()
