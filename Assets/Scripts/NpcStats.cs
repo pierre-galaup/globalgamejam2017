@@ -84,6 +84,8 @@ public class NpcStats : MonoBehaviour
         this.character = this.GetComponent<UserThirdPersonCharacter>();
         if (this.agent == null || this.character == null)
             return;
+        if (this.Speed < 0)
+            return;
         this.Speed = Random.Range(1f, 5f);
         this.agent.speed = this.Speed;
         this.character.AnimSpeedMultipliter = this.Speed * 3;
